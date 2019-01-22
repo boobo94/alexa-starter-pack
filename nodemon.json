@@ -1,0 +1,8 @@
+{
+    "watch": [
+        "./lambda/custom",
+        "./local"
+    ],
+    "ext": "js",
+    "exec": "babel-node local/index.js"
+}
