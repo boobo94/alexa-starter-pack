@@ -1,6 +1,44 @@
 # Starter-Pack-Alexa-Skill
 This is a Starter Pack skill for Amazon Alexa
 
+# Setup before to start
+
+Before everything you need to connect to your own skill and lambda function. For that please follow these instructions:
+
+## `.ask/config`
+
+1. Go to `.ask/config`
+2. Modify on **line 4** the value of `skill_id` with your own skill id
+3. Modify on **line 11** the value of `uri` with the id of your lambda function
+4. Save
+
+## `package.json`
+
+1. Go in `package.json` from the root of the project
+2. On **lines 12 and 14,15** Change the value of `--skill-id ` with your own skill id
+3. Save
+
+That's it... you can start the development now...
+
+Good luck!
+
+# How to run
+
+To run the project you need to follow just two simple steps:
+
+1. Go into the root of the project and run 
+
+```bash
+npm run serveo
+```
+
+Or Simply check [this](#local-development)
+
+2. Go to the project and run
+
+```bash
+npm start
+```
 
 # Deployment
 
@@ -12,7 +50,7 @@ $ ask deploy
 ### Set up new `ask profile`
 
 Follow [this](https://developer.amazon.com/docs/smapi/set-up-credentials-for-an-amazon-web-services-account.html) guide
-If you get no existing `~/.aws/config` run 
+If you get the error with no existing `~/.aws/config` file, run 
 
 ```bash
 touch ~/.aws/config
@@ -52,3 +90,18 @@ That's it.
 2. Run `ngrok http 3000`
 
 3. Copy the URL and follow the same steps above from 3 to 6.
+
+# NPM Scripts
+
+Frequently used `npm script`s:
+
+| Script name   | Description |
+|---------------|-------------|
+| `clean`       | Remove the dist folder |
+| `build`       | Create a build into dist folder, the code transpiled is compatible with Node 8.1 |
+| `start`       | Runs the service locally, watching after changes |
+| `serveo`      | Create a ssh tunnel to be able to link the skill to your local environment |
+| `deploy`      | Deploy dist folder to lambda function |
+| `get:skill`   | Sync skill manifest with the local file |
+| `get:models`  | Sync models with the local files |
+
