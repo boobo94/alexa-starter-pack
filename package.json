@@ -25,19 +25,21 @@
   },
   "homepage": "https://github.com/boobo94/alexa-starter-pack#readme",
   "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.2.2",
-    "@babel/node": "^7.2.2",
-    "@babel/preset-env": "^7.2.3",
     "@types/node": "^10.12.18",
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
-    "nodemon": "^1.18.9"
+    "nodemon": "^1.18.9",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-es2017": "^6.24.1"
   },
   "dependencies": {
     "ask-sdk-core": "^2.3.0",
     "ask-sdk-model": "^1.11.2",
-    "babel-preset-node8-es6": "^12.0.0",
     "i18next": "^11.3.6",
     "i18next-sprintf-postprocessor": "^0.2.2"
   }
