@@ -4,7 +4,8 @@
   "description": "This is a Starter Pack with ES6 for skills with Amazon Alexa",
   "main": "index.js",
   "scripts": {
-    "build": "babel ./lambda/custom/ -d dist",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && babel ./lambda/custom/ -d dist && cp lambda/custom/package.json dist/",
     "start": "nodemon",
     "serveo": "ssh -R 80:localhost:3000 serveo.net",
     "deploy": "npm run build && ask deploy",
@@ -36,6 +37,7 @@
   "dependencies": {
     "ask-sdk-core": "^2.3.0",
     "ask-sdk-model": "^1.11.2",
+    "babel-preset-node8-es6": "^12.0.0",
     "i18next": "^11.3.6",
     "i18next-sprintf-postprocessor": "^0.2.2"
   }
