@@ -14,7 +14,7 @@
     "apis": {
       "custom": {
         "endpoint": {
-          "uri": "ARN_URI"
+          "sourceDir": "dist/custom"
         },
         "interfaces": []
       }
