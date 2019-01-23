@@ -9,6 +9,15 @@ This is a Starter Pack skill for Amazon Alexa
 $ ask deploy
 ```
 
+### Set up new `ask profile`
+
+Follow [this](https://developer.amazon.com/docs/smapi/set-up-credentials-for-an-amazon-web-services-account.html) guide
+If you get no existing `~/.aws/config` run 
+
+```bash
+touch ~/.aws/config
+```
+
 # Local development
 
 In order to develop locally and see your changes reflected instantly, you will need to create an SSH tunnel or expose somehow your local development server. There are several services that allow you to do this, for example [ngrok](https://ngrok.com/) or [serveo.net](https://serveo.net/).
