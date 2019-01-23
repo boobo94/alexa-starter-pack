@@ -1,3 +1,5 @@
+[![BCH compliance](https://bettercodehub.com/edge/badge/boobo94/alexa-starter-pack?branch=master)](https://bettercodehub.com/)
+
 # Starter-Pack-Alexa-Skill
 This is a Starter Pack skill for Amazon Alexa
 
